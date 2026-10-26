@@ -1,0 +1,225 @@
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080d19;
+  color: #eef4ff;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #111a2c;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #30415e;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav span {
+  color: #4ce5ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #4ce5ff;
+}
+
+header {
+  text-align: center;
+  padding: 65px 20px;
+  background: #101d32;
+}
+
+header h1 {
+  font-size: 42px;
+  color: #4ce5ff;
+}
+
+header p {
+  color: #b4c2d9;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 18px;
+}
+
+.card {
+  background: #111a2c;
+  border: 1px solid #30415e;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 24px;
+  scroll-margin-top: 100px;
+}
+
+.card h2 {
+  color: #4ce5ff;
+}
+
+.card p {
+  color: #b4c2d9;
+}
+
+.demo {
+  padding: 20px;
+  background: #080d19;
+  border: 1px solid #30415e;
+  border-radius: 10px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.computers {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.pc {
+  flex: 1;
+  min-width: 80px;
+  padding: 18px 8px;
+  background: #18253b;
+  border: 1px solid #30415e;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.pc.active {
+  background: #55451c;
+  border-color: #ffd166;
+  box-shadow: 0 0 15px #ffd16655;
+}
+
+button {
+  padding: 11px 18px;
+  background: #4ce5ff;
+  color: #07111c;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button.reset {
+  background: #30415e;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #9aabc6;
+  border-top: 1px solid #30415e;
+}
+
+@media (max-width: 600px) {
+  nav {
+    gap: 15px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+}
+.virus-area{
+    position:relative;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:30px 0;
+    min-height:140px;
+}
+
+.file{
+    width:120px;
+    height:90px;
+    background:#18253b;
+    border:2px solid #30415e;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    transition:.4s;
+}
+
+.file.infected{
+    background:#4b1f2d;
+    border-color:#ff4d6d;
+    box-shadow:0 0 20px #ff4d6d;
+}
+
+.virus-icon{
+    position:absolute;
+    left:70px;
+    top:40px;
+    font-size:35px;
+    opacity:0;
+    transition:.8s linear;
+}
+
+/* Trojan app design */
+
+.trojan-app {
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 25px;
+    text-align: center;
+    background: #18253b;
+    border: 2px solid #30415e;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.app-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.trojan-app h3 {
+    color: #60a5fa;
+}
+
+#trojan-status {
+    margin-top: 20px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}

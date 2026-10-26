@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Malware Simulator</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>🛡️ Malware Lab</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#virus">Virus</a>
+            <a href="#worm">Worm</a>
+            <a href="#trojan">Trojan</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Safe Malware Simulator</h1>
+        <p>Learn how malware behaves through safe visual simulations.</p>
+        <span class="safe-label">SAFE EDUCATIONAL DEMO</span>
+    </header>
+
+    <main class="container">
+
+        <!-- VIRUS -->
+        <section id="virus" class="card">
+            <h2>🦠 Virus Simulation</h2>
+            <p>Watch a fictional virus move between demo files.</p>
+
+            <div class="virus-area">
+                <div class="file" id="vfile1">📄<br>notes.txt</div>
+                <div class="file" id="vfile2">📄<br>project.doc</div>
+                <div class="file" id="vfile3">📄<br>photo.jpg</div>
+                <div class="virus-icon" id="virusIcon">🦠</div>
+            </div>
+
+            <p id="virus-status" class="status">Ready to simulate.</p>
+
+            <button onclick="runVirus()">▶ Run Virus</button>
+            <button class="reset" onclick="resetVirus()">↻ Reset</button>
+        </section>
+
+        <!-- WORM -->
+        <section id="worm" class="card">
+            <h2>🪱 Worm Simulation</h2>
+            <p>Watch a simulated worm travel between demo computers.</p>
+
+            <div class="network">
+                <div class="pc" id="pc1">💻<br>PC-A</div>
+                <div class="pc" id="pc2">💻<br>PC-B</div>
+                <div class="pc" id="pc3">💻<br>PC-C</div>
+                <div class="pc" id="pc4">💻<br>PC-D</div>
+            </div>
+
+            <p id="worm-status" class="status">Ready to simulate.</p>
+
+            <button onclick="runWorm()">▶ Run Worm</button>
+            <button class="reset" onclick="resetWorm()">↻ Reset</button>
+        </section>
+
+        <!-- TROJAN -->
+        <section id="trojan" class="card">
+            <h2>🐴 Trojan Simulation</h2>
+            <p>Inspect a fictional application from an unknown publisher.</p>
+
+            <div id="trojan-demo" class="trojan-app">
+                <div class="app-icon">📦</div>
+                <h3>Free Game Installer</h3>
+                <p>Publisher: Unknown</p>
+                <p>Security status: Unverified</p>
+            </div>
+
+            <p id="trojan-status" class="status">Ready to simulate.</p>
+
+            <button onclick="runTrojan()">⚠ Inspect App</button>
+            <button class="reset" onclick="resetTrojan()">↻ Reset</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Malware Lab | Educational simulation only</p>
+        <p>No real files, computers, or applications are affected.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
